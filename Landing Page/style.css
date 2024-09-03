@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('images/stars.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 500 px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.logo img{
+    width:97px;
+    height: 70px;
+    margin-left: 79px;
+    cursor: pointer;
+    margin-top: 10px
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 98px;
+    position: relative;
+    height: 50px;
+}
+.navbar a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+}
+/* .navbar ul li a:hover{
+    box-shadow: 0 3px 50px olivedrab inset, 0 3px 50px olivedrab inset,0 3px 50px olivedrab inset,0 3px 50px olivedrab inset;
+} */
+.navbar a:hover{
+    color: rgb(51, 255, 0);
+}
+.navbar a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid rgb(52, 231, 115);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+.navbar a:hover span{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+.image {
+    text-align: center; 
+    display: inline-block; 
+}
+
+.image img {
+    max-width: 100%; 
+    /* max-height: 400px;  */
+    width: 727px;
+    height: 596px;
+    margin-left: 839px;
+    align-items: center;
+    justify-content: center;   
+}
+
+.text {
+    position: absolute;
+    top: 186px;
+    left: 221px;
+}
+.text p{
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.text h1{
+    font-size: 4em;
+    line-height: 1.5em;
+    color: #fff;
+}
+.text h2{
+    color: #fff;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+.text h1 span{
+    color: rgb(61, 229, 53);
+}
+#order{
+    text-decoration: none;
+    color: black;
+    background-color:rgb(186, 237, 16);
+    padding: 10px 20px;
+}
+#dis{
+    text-decoration: none;
+    color: #fff;
+    background-color: #262626;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+#burger{
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+}
+#burger img{
+    transition: 0.4s ease;
+}
+#burger img:hover{
+    transform: translateY(-20px);
+}

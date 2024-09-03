@@ -1,0 +1,64 @@
+.navigation{
+    padding: 0 8px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.navigation ul{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    font-weight: 500;
+}
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navigation .logo img {
+  width: 150px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+
+.navigation ul li {
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.navigation ul li:hover {
+  color: #164edc; /* Change to your desired color */
+  transform: scale(1.1); /* Slightly scale up */
+}
+
+/* Underline animation */
+.navigation ul li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #1d9acf;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.navigation ul li:hover::after {
+  width: 100%;
+}
